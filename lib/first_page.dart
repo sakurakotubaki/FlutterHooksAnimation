@@ -14,10 +14,10 @@ class FirstPage extends HookWidget {
     Future<void> loadAnimation() async {
       await Future.delayed(Duration.zero, () {
         firstBool.value = !firstBool.value;
-        ;
       });
       firstBool.value = false;
     }
+
     // 画面が表示された時にloadAnimationを実行する
     useEffect(() {
       loadAnimation();
